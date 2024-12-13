@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 const corsOptions = {
-  origin: ["https://vehicle-management-system-jhon.vercel.app/"],
+  origin: ["https://vehicle-management-system-jhon.vercel.app"],
   methods: ["GET", "POST", "PATCH", "DELETE"],
   credentials: true,
 };
@@ -22,7 +22,7 @@ app.use("/api/vehicles", vehicleRoutes);
 app.all("*", (req, res, next) => {
   res.status(404).json({
     success: false,
-    message: "`Can't find ${req.originalUrl} on this server`",
+    message: `Can't find ${req.originalUrl} on this server`,
   });
 });
 
