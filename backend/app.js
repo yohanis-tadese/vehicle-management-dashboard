@@ -21,7 +21,7 @@ app.use((req, res, next) => {
 
 
 app.get("/", (req, res) => {
-  res.send("Wellcome our backend !");
+  res.send("Wellcome our api !");
 });
 
 app.use("/api/vehicles", vehicleRoutes);
