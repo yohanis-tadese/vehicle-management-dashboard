@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 const corsOptions = {
-  origin: ["http://localhost:5173"],
+  origin: ["https://vehicle-management-system-jhon.vercel.app"],
   methods: ["GET", "POST", "PATCH", "DELETE"],
   credentials: true,
 };
