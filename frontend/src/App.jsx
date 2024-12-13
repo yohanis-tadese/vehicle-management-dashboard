@@ -5,7 +5,7 @@ import AddVehicle from "./pages/AddVehicle";
 import EditVehicle from "./pages/EditVehicle";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
-import Sidebar from "./components/SideBar";
+import Sidebar from "./components/Sidebar";
 import VehicleList from "./pages/VechicleList";
 import { useEffect, useState } from "react";
 import { ToastContainer } from "react-toastify";
