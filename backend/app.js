@@ -13,6 +13,13 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "https://vehicle-management-system-jhon.vercel.app");
+  res.header("Access-Control-Allow-Credentials", "true");
+  next();
+});
+
+
 app.get("/", (req, res) => {
   res.send("Wellcome our backend !");
 });
