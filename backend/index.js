@@ -12,9 +12,7 @@ const connectDB = async () => {
   }
 };
 
-const PORT = process.env.PORT || 5000;
-
-app.listen(PORT, async () => {
+app.listen(5000, async () => {
   await connectDB();
-  console.log(`Server is running on hport :${PORT}`);
+  console.log(`Server is running on port 5000}`);
 });
