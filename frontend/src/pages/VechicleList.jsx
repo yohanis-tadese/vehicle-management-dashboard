@@ -9,6 +9,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ConfirmationModal from "../components/Modal";
 import "../assets/css/loader.css";
+import TotalCount from "../components/TotalCount";
 
 const VehicleList = () => {
   const [vehicles, setVehicles] = useState([]);
@@ -16,6 +17,7 @@ const VehicleList = () => {
   const [statusFilter, setStatusFilter] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
+  const [totalCount, setTotalCount] = useState(1);
   const [notFoundMessage, setNotFoundMessage] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [vehicleToDelete, setVehicleToDelete] = useState(null);
@@ -40,6 +42,7 @@ const VehicleList = () => {
       setTimeout(() => {
         setVehicles(data.vehicles);
         setTotalPages(data.totalPages);
+        setTotalCount(data.totalCount);
         setNotFoundMessage("");
         setLoading(false);
       }, 300);
@@ -104,6 +107,7 @@ const VehicleList = () => {
           searchTerm={searchTerm}
           onSearchChange={handleSearchChange}
         />
+        <TotalCount totalCount={totalCount} />
         <Filter
           statusFilter={statusFilter}
           onStatusFilterChange={handleStatusFilterChange}
