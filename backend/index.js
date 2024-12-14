@@ -1,24 +1,22 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
 import app from "./app.js";
 
-let isConnected = false;
+dotenv.config();
 
 const connectDB = async () => {
-  if (!isConnected) {
-    try {
-      await mongoose.connect("mongodb+srv://yohanistadese05:Rgw3GwsPEDDdATQX@cluster0.7cuyu.mongodb.net/");
-      isConnected = true;
-    } catch (error) {
-      throw error;
-    }
+  try {
+    await mongoose.connect(process.env.MONGO_URI);
+    console.log("MongoDB connected successfully");
+  } catch (error) {
+    console.error("Failed to connect to MongoDB", error.message);
+    process.exit(1);
   }
 };
 
-export default async (req, res) => {
-  try {
-    await connectDB();
-    app(req, res);
-  } catch (error) {
-    res.status(500).json({ message: "Internal Server Error" });
-  }
-};
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, async () => {
+  await connectDB();
+  console.log(`Server is running on hport :${PORT}`);
+});
