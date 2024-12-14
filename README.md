@@ -1,6 +1,6 @@
 # Vehicle Management Systems
 
-<a href="https://vehicle-management-system-beta.vercel.app/" target="_blank">Live Demo</a>
+<a href="https://vehicle-management-system-beta.vercel.app/" target="blank">Live Demo</a>
 
 ## Project Purpose
 This project was developed as part of a mini-project submission for a potential client. The client is seeking a MERN stack developer to build a **Fleet Management System**, and this dashboard serves as a proof of concept for the final system.  
