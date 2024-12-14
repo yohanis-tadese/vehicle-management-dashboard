@@ -1,6 +1,13 @@
-# Vehicle Management Systems
+## Vehicle Management Systems
+This project was developed as part of a mini-project submission for a potential client using **MERN** stack (React frontend and Node backend).
 
-<a href="https://vehicle-management-system-beta.vercel.app/" target="blank">Live Demo</a>
+## Live Website
+Live Visited Link -> https://vehicle-management-system-beta.vercel.app
+
+## Some notable features of the Original Version
+1. Add new vehicles
+2. Update and Delete existing vehicles.
+3. See List of vehicles
 
 ## Project Purpose
 This project was developed as part of a mini-project submission for a potential client. The client is seeking a MERN stack developer to build a **Fleet Management System**, and this dashboard serves as a proof of concept for the final system.  
