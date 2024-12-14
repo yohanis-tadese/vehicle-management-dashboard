@@ -6,25 +6,18 @@ const app = express();
 app.use(express.json());
 
 const corsOptions = {
-  origin: "https://yohanis-vehicle-management-system.vercel.app",
+  origin: ["https://vehicle-management-system-beta.vercel.app"],
   methods: ["GET", "POST", "PATCH", "DELETE"],
   credentials: true,
 };
 
 app.use(cors(corsOptions));
 
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "https://vehicle-management-system-jhon.vercel.app");
-  res.header("Access-Control-Allow-Credentials", "true");
-  next();
-});
-
-
 app.get("/", (req, res) => {
-  res.send("Wellcome our api !");
+  res.send("Wellcome our backend !!");
 });
 
-app.use("/api/vehicles", vehicleRoutes);
+app.use("/api/v1/vehicles", vehicleRoutes);
 
 app.all("*", (req, res, next) => {
   res.status(404).json({

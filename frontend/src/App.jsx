@@ -9,6 +9,7 @@ import Sidebar from "./components/Sidebar";
 import VehicleList from "./pages/VechicleList";
 import { useEffect, useState } from "react";
 import { ToastContainer } from "react-toastify";
+import About from "./pages/About";
 
 const App = () => {
   const [stats, setStats] = useState({
@@ -55,6 +56,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Dashboard stats={stats} />} />
               <Route path="/add-vechile" element={<AddVehicle />} />
+              <Route path="/about" element={<About />} />
               <Route path="/vechiles" element={<VehicleList />} />
               <Route path="/edit-vechile/:id" element={<EditVehicle />} />
               <Route path="*" element={<NotFound />} />
