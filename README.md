@@ -23,17 +23,17 @@ This proof-of-concept includes:
 ### Key Features:
 - **Dashboard Overview**  
   <a href="https://vehicle-management-system-beta.vercel.app/" target="_blank">
-    <img src="https://github.com/user-attachments/assets/79c10ad4-5ada-49fa-89ca-c4465afd9a95" target="_blank" alt="Dashboard" style="width:800px;height:auto;">
+    <img src="https://github.com/user-attachments/assets/79c10ad4-5ada-49fa-89ca-c4465afd9a95" alt="Dashboard" style="width:800px;height:auto;">
   </a>
 
 - **Vehicle List**  
   <a href="https://vehicle-management-system-beta.vercel.app/vechiles" target="_blank">
-    <img src="https://github.com/user-attachments/assets/4340a901-a886-4ce1-b4fa-a1ab5f558dbe" target="_blank" alt="Vehicle List" style="width:800px;height:auto;">
+    <img src="https://github.com/user-attachments/assets/4340a901-a886-4ce1-b4fa-a1ab5f558dbe" alt="Vehicle List" style="width:800px;height:auto;">
   </a>
 
 - **Add Vehicle**  
   <a href="https://vehicle-management-system-beta.vercel.app/add-vechile" target="_blank">
-    <img src="https://github.com/user-attachments/assets/810a665c-05a4-4b05-ba52-32f81026c440" target="_blank" alt="Add Vehicle" style="width:800px;height:auto;">
+    <img src="https://github.com/user-attachments/assets/810a665c-05a4-4b05-ba52-32f81026c440" alt="Add Vehicle" style="width:800px;height:auto;">
   </a>
 
 ## Challenges and Solutions
