@@ -7,36 +7,36 @@ export const fetchVehicles = async (
   page = 1
 ) => {
   const response = await api.get(
-    `/vehicles?search=${searchQuery}&status=${status}&limit=10&page=${page}`
+    `/api/vehicles?search=${searchQuery}&status=${status}&limit=10&page=${page}`
   );
   return response.data;
 };
 
 // Fetch dashboard statistics
 export const fetchDashboardData = async () => {
-  const response = await api.get(`/vehicles/dashboard`);
+  const response = await api.get(`/api/vehicles/dashboard`);
   return response.data.stats;
 };
 
 // Fetch a single vehicle by its ID
 export const fetchVehicleById = async (id) => {
-  const response = await api.get(`/vehicles/${id}`);
+  const response = await api.get(`/api/vehicles/${id}`);
   return response.data.vehicle;
 };
 
 // Add a new vehicle
 export const addVehicle = async (vehicleData) => {
-  const response = await api.post("/vehicles", vehicleData);
+  const response = await api.post("/api/vehicles", vehicleData);
   return response.data.vehicle;
 };
 
 // Update an existing vehicle by ID
 export const updateVehicle = async (id, vehicleData) => {
-  const response = await api.patch(`/vehicles/${id}`, vehicleData);
+  const response = await api.patch(`/api/vehicles/${id}`, vehicleData);
   return response.data.vehicle;
 };
 
 // Delete a vehicle by ID
 export const deleteVehicle = async (id) => {
-  await api.delete(`/vehicles/${id}`);
+  await api.delete(`/api/vehicles/${id}`);
 };
