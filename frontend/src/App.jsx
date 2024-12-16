@@ -47,8 +47,8 @@ const App = () => {
           <Sidebar />
         </div>
 
-        <div className="flex-1 ml-52 flex flex-col">
-          <div className="fixed top-0  right-0 left-52 z-10 shadow-md">
+        <div className="flex-1 ml-20 sm:ml-52 flex flex-col">
+          <div className="fixed top-0 right-0 left-20 sm:left-52  z-10 shadow-md">
             <Navbar />
           </div>
 
@@ -56,8 +56,8 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Dashboard stats={stats} />} />
               <Route path="/add-vechile" element={<AddVehicle />} />
-              <Route path="/about" element={<About />} />
               <Route path="/vechiles" element={<VehicleList />} />
+              <Route path="/about" element={<About />} />
               <Route path="/edit-vechile/:id" element={<EditVehicle />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
